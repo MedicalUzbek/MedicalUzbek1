@@ -1,3 +1,14 @@
+.navbar .navbar-nav .nav-item .asosiy{
+  padding: 7px 20px;
+  margin: 0 5px;
+  background: #003049;
+  border-radius: 47px;
+}
+.navbar .navbar-nav .nav-item .roy{
+  padding: 7px 20px;
+  background: #003049;
+  border-radius: 47px;
+}
 
 .mdb-color.lighten-5 {
   background-color: #d0d6e2 !important; }
