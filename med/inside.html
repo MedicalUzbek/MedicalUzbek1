@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="log.css">
+
+</head>
+<body>
+
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ro'yxatdan o'tish</button>
+    
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+        <div class="logimg">
+          <img src="head - Copy.png" width="100%">
+        </div>
+      
+      <form class="modal-content" action="#">
+        <div class="container">
+          <h1>Ro'yxatdan o'tish</h1>
+          <p>Iltimos barcha so'rovlarni to'ldiring</p>
+          <hr>
+
+          <br/>
+          <br/>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="@gmail.com" name="email" required>
+          <br/>
+          <label for="psw"><b>Kodni kiriting</b></label>
+          <input type="password" placeholder="*********" name="psw" required>
+          
+          <div class="hr">
+            <hr>
+          </div>
+        
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="phonenum">
+            <a href="#">Telefon raqam orqali ro'yxatdan o'tish</a>
+          </div>
+
+
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Eslab qolish
+          </label>
+        
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Yuborish</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    var modal = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+
+</body>
+</html>

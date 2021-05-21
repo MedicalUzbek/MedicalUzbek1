@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;}
+
+body{
+    background-color: #F2F4F6;
+}
+
+a{
+    text-decoration: none;
+    font-size: bold;
+    font-weight: 600;
+}
+
+#navbar .nav1 a img{
+    width: 163.84px;
+}
+
+#navbar .nav2 a{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+
