@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top"></div>
+    <div id="navbar">
+        <div class="nav1">
+            <a href="main.html"><img src="images/VAZLOGO (1).png"></a>
+        </div>
+        <div class="nav2">
+            <a class="btn" href="#">SHIFOKORLARIMIZ</a>
+            <a class="btn active" href="#">ASOSIY</a>
+            <a class="btn" href="#">JOYLASHUVIMIZ</a>
+        </div>
+        <div class="nav3">
+            <a class="btn" href="#">KIRISH</a>
+            <a class="btn active" href="#">RO'YHATDAN O'TISH</a>
+        </div>
+    </div>
+    
+    
+<script>
+    var header = document.getElementById("navbar");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+    
+</body>
+</html>
