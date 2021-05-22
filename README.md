@@ -1,2 +1,3 @@
-# MidicalUzbek.github.io
+# MidicalUzbek
+
 medical
