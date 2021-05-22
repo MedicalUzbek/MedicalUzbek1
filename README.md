@@ -1,2 +1,2 @@
-# Min2021
+# MidicalUzbek.github.io
 medical
