@@ -11,35 +11,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- izoh -->
+
+    <!--add Navbar-->
     <div class="top"></div>
     <div id="navbar">
         <div class="nav1">
-            <a href="main.html"><img src="images/VAZLOGO (1).png"></a>
+            <a href="main.html"><img src="images/gerb_uzbekistana.png">O'ZBEKISTON RESPUBLIKASI SOG'LIQNI SAQLASH VAZIRLIGI</a>
         </div>
         <div class="nav2">
-            <a class="btn" href="#">SHIFOKORLARIMIZ</a>
-            <a class="btn active" href="#">ASOSIY</a>
-            <a class="btn" href="#">JOYLASHUVIMIZ</a>
+            <a class="btun" href="#">SHIFOKORLARIMIZ</a>
+            <a class="btun active" href="#">ASOSIY</a>
+            <a class="btun" href="#">JOYLASHUVIMIZ</a>
         </div>
         <div class="nav3">
-            <a class="btn" href="#">KIRISH</a>
-            <a class="btn active" href="#">RO'YHATDAN O'TISH</a>
+            <a class="btun" href="#">KIRISH</a>
+            <a class="btun active" href="#">RO'YHATDAN O'TISH</a>
         </div>
     </div>
-    
-    
+
+    <!--add Animation-->
+    <video autoplay muted loop id="myVideo">
+       <source src="production ID_4121618.mp4" type="video/mp4">
+    </video>
+  
+  <div class="content">
+    <h1>NEVER STOP TO</h1>
+    <H2>EXPLORING THE WORLD</H2>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+
+  <!--Region-->
+  <div class="region">
+      <p>JIZZAX VILOYAT OILAVIY POLIKNIKALARI</p>
+  </div>
+
+  <div class="topproduct"> 
+    <a href="#"> <img src="/New folder/propic/Aust.jpg" width="100%"> <H5>Itailancha gamburger</H5> <p>Go'sht, pishloq, non, mayonez, tuxum, pomildori, piyoz. </p> <h4>UZS 35.500</h4> <p class="time">min 20</p></a>
+  </div>
+
 <script>
     var header = document.getElementById("navbar");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
+    var btuns = header.getElementsByClassName("btun");
+    for (var i = 0; i < btuns.length; i++) {
+      btuns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
       });
     }
-    </script>
+    var video = document.getElementById("myVideo");
+
+</script>
     
 </body>
 </html>
