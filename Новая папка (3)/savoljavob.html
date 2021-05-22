@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div id="navbar1">
+        <div class="nav1">
+            <a href="main.html"><img style="width: 60px;" src="/service/images/gerb_uzbekistana.png" ></a>
+        </div>
+        <div class="nav2">
+             <input type="text" class="inp" placeholder="Qidirish">
+
+        </div>
+        
+    </div>
+    
+
+    <header>
+        <div class="box">
+            <h1>Savol&Javoblar</h1>
+            <span>Eng ko`p berilgan savollar</span>
+
+            <p class="top">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, cumque. Voluptatum natus quia ad reprehenderit exercitationem dolorem cupiditate quos porro.</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, cumque. Voluptatum natus quia ad reprehenderit exercitationem dolorem cupiditate quos porro.</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, cumque. Voluptatum natus quia ad reprehenderit exercitationem dolorem cupiditate quos porro.</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, cumque. Voluptatum natus quia ad reprehenderit exercitationem dolorem cupiditate quos porro.</p>
+
+            <br><br>
+           <div class="btu">
+                <p>Bu javob sizga maqul bo`ldimi ? </p> <button>Ha</button><button>Yo`q</button>
+                
+           </div>
+        </div>
+        <div class="box2">
+
+            <a href="#" class="link">SHIFOKORLARIMIZ</a>
+            <a href="#" class="link">ASOSIY</a>
+            <a href="#" class="link">JOYLASHUVIMIZ</a>
+        </div>
+    </header>
+    
+    </div>
+<script>
+    var header = document.getElementById("navbar");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+    
+</body>
+</html>

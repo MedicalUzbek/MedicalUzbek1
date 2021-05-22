@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--add Navbar-->
+
+    <div id="navbar">
+        <div class="nav1">
+            <a href="main.html"><img src="/service/images/gerb_uzbekistana.png">O'ZBEKISTON RESPUBLIKASI SOG'LIQNI SAQLASH
+                VAZIRLIGI</a>
+        </div>
+        <div class="nav2">
+            <a class="btun active" href="#">SHIFOKORLARIMIZ</a>
+            <a class="btun " href="/service/main.html">ASOSIY</a>
+            <a class="btun" href="#">JOYLASHUVIMIZ</a>
+        </div>
+        <div class="nav3">
+            <a class="btun" href="#">KIRISH</a>
+            <a class="btun active" href="#">RO'YHATDAN O'TISH</a>
+        </div>
+    </div>
+
+    <section>
+        <h1>Hamshira xizmatlari</h1>
+        <p>O`z malumotingizni kiritish orqali, hamshiralar hizmatlarini uyda turgan holda chaqirishingiz va to`g`ri
+            mu`olaja olish imkoniga ega bo`lasiz ! <br> Iltimos barcha malumotlaringizni to`g`ri kiriting !</p>
+    </section>
+
+    <main>
+        <div class="form">
+            <form action="">
+                <div class="icon">
+                    <img src="./icons/iconmonstr-phone-1 1.png" width="20px" alt="">
+                    <input type="text" placeholder="Telefon raqamingiz...">
+                </div>
+                <div class="icon">
+                    <img src="./icons/iconmonstr-location-1 1.png" width="20px" alt="">
+                    <input type="text" placeholder="Manzilingiz...">
+                </div>
+                <div class="icon">
+                    <img src="./icons/iconmonstr-user-21 1.png" width="20px" alt="">
+                    <input type="text" placeholder="Ism familyangiz...">
+                </div>
+
+            </form>
+            <div class="past">
+                <div class="left">
+                    <h4>Yoshingiz </h4>
+                    <select name="" id="">
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                    </select>
+
+
+                    <div class="blok">
+                        <p>Jinsingiz</p>
+                        Erkak <input type="radio" value="man" name="gender">
+                        Ayol <input type="radio" value="woman" name="gender">
+                    </div>
+                </div>
+                <button>
+                    Qabul qilinsin
+                </button>
+
+
+            </div>
+        </div>
+        <div class="kart">
+            <div style="position:relative;overflow:hidden;border:0px;"><a
+                    href="https://yandex.uz/maps/org/semeynaya_poliklinika_2/40015565721/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Семейная поликлиника № 2</a><a
+                    href="https://yandex.uz/maps/21606/dzhizak/category/adult_outpatient_clinic/184106014/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Поликлиника для взрослых в
+                    Джизаке</a><iframe src="https://yandex.uz/map-widget/v1/-/CCU4vZDyDA" width="560" height="300"
+                    frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </main>
+
+
+
+    <script>
+        var header = document.getElementById("navbar");
+        var btuns = header.getElementsByClassName("btun");
+        for (var i = 0; i < btuns.length; i++) {
+            btuns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+        var video = document.getElementById("myVideo");
+
+    </script>
+
+</body>
+
+</html>
